@@ -1,0 +1,34 @@
+#! /usr/bin/env bash
+
+function my-config() {
+    echo "${MY_CONFIG_INSTALL_LOCATION}"
+    case "${1}" in
+
+        "install")
+            (exec "${MY_CONFIG_INSTALL_LOCATION}/install.sh")
+            ;;
+
+        "update")
+            (exec "${MY_CONFIG_INSTALL_LOCATION}/update.sh")
+            ;;
+
+        "update-plugin")
+            (exec "${MY_CONFIG_INSTALL_LOCATION}/update-plugin.sh")
+            ;;
+
+        "save"|"snapshot")
+            (exec "${MY_CONFIG_INSTALL_LOCATION}/snapshot.sh")
+            ;;
+
+        *)
+            echo "unknown command ${1}"
+            echo "usage:"
+            echo ""
+            echo "install\tto perform a fresh install"
+            echo "update\tto update a current install"
+            echo "save\tto snapshot current install"
+            echo ""
+            echo "update-plugin\t perform update over all plugins"
+            ;;
+    esac
+}

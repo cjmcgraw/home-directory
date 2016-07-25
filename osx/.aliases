@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+alias l='ls'
+alias la='ls -al'
+alias ll='ls -al'
+
+alias t='tree'

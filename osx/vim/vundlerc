@@ -1,0 +1,51 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle rc configuration file
+"
+"   This file is designed to controlt he plugins
+"   associated with Vundle
+"
+"   Author:     Carl McGraw
+"   Date:       01/05/15
+"   Vesion:     1.0
+"
+"   Table of Contents:
+"       => Default Configurations
+"       => General
+"       => Display
+"       => Plugin specific configurations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Default Configurations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if filereadable($VIM_CONFIG_FILES . "/Vundle/vundlerc.default")
+    source $VIM_CONFIG_FILES/Vundle/vundlerc.default
+else
+    source $VUNDLE_INSTALL/defaults/vundlerc.default
+endif
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Display
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Add airline
+Plugin 'bling/vim-airline'
+
+" Add tmuxline
+Plugin 'edkolev/tmuxline.vim'
+
+" Add python highlighting
+"Plugin 'klen/python-mode'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin specific configurations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Powerline
+let g:airline_powerline_fonts=1
+set timeoutlen=25
+set laststatus=2
+
+"python-mode
+"let g:pymode_folding=0
