@@ -11,7 +11,8 @@ brew update
 echo "installing gnu coreutils:"
 brew install wget
 brew install curl
-brew install coreutils findutils gnu-tar gnused gawk gnutls gnu-indent gnu-getopt
+brew install coreutils findutils gnu-tar gawk gnutls gnu-indent gnu-getopt
+# brew install gnused
 
 echo "install useful tools to have:"
 brew install git
@@ -39,7 +40,7 @@ popd
 
 echo "configuring vim:"
 pushd "vim/"
-exec "/.install.sh"
+exec "/install.sh"
 popd
 
 echo "copying over hidden home files/directories"

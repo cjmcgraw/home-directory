@@ -18,7 +18,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Default Configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-if filereadable($VIM_CONFIG_FILES . "/Vundle/vundlerc.default")
+if filereadable($VIM_CONFIG_FILES . "/Vundle/vundlerc.base")
     source $VIM_CONFIG_FILES/Vundle/vundlerc.default
 else
     source $VUNDLE_INSTALL/defaults/vundlerc.default
