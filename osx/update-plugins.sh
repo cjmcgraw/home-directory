@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-echo "UPDATING PLUGINS"
-exit;
+set -eu
 
 source "${HOME}/.environmental-variables"
 

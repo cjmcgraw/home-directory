@@ -1,6 +1,5 @@
-# Set up home bin for executables
-export PATH=$PATH':/Users/carlm/bin/'
+#!/usr/bin/env bash
+source "{$HOME}/.environmental-variables
+source "${HOME}/.functions"
+source "${HOME}/.aliases"
 
-set_tds() {
-    export DEVELOPMENT_SERVER=$1
-}

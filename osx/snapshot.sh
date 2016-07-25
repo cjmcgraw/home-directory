@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 set -eu
-echo "SNAPSHOT"
-exit;
+
+source "${HOME}/.environmental-variables"
 
 UNIX_TIMESTAMP="$(date +%s | rev | cut -c 4- | rev)"
 DEFAULTS_LOCATION="${HOME}/.my-config/defaults/${UNIX_TIMESTAMP:-4}"

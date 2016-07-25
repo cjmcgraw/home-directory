@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 set -eu
-echo "update"
+echo "update not implemented"
 exit;
 
 echo "configuring zsh:"
